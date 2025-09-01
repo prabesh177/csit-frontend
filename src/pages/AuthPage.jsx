@@ -51,7 +51,7 @@ export default function AuthPage({ setIsAuthenticated, setUserRole }) {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const navigate = useNavigate();
 
-  const API_URL = "csit-backend-production.up.railway.app";
+  const API_URL = "https://csit-backend-production.up.railway.app";
 
   function validatePassword(pw) {
     const uppercase = /[A-Z]/;
