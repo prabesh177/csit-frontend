@@ -20,7 +20,7 @@ const subjects = [
   { subject: "Computer", icon: MonitorCheck },
 ];
 
-const BASE_URL = "http://localhost:3001";
+const BASE_URL = "https://csit-backend-production.up.railway.app";
 
 export default function SubjectTestPage() {
   const navigate = useNavigate();

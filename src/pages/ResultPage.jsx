@@ -10,7 +10,7 @@ import Feedback from "../components/result/Feedback";
 import SubjectStatsCard from "../components/result/SubjectStatsCard"; // <--- NEW IMPORT for subject tests
 
 
-const BASE_URL = "http://localhost:3001";
+const BASE_URL = "https://csit-backend-production.up.railway.app";
 
 export default function TestResult() {
   const { resultId } = useParams(); 

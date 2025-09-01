@@ -19,10 +19,11 @@ export default function DeleteQuestion() {
     }
 
     try {
-      const response = await fetch(`http://localhost:3001/api/questions/${questionId}`, { // Ensure this matches your backend route
-        method: "DELETE",
-        credentials: "include",
-      });
+      const response = await fetch(`https://csit-backend-production.up.railway.app/api/questions/${questionId}`, {
+          method: "DELETE",
+          credentials: "include",
+        });
+
 
       const data = await response.json(); // Always try to parse JSON response
 

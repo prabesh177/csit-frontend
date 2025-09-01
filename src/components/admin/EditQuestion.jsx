@@ -38,7 +38,7 @@ export default function EditQuestion() {
       setError(null);
       setSuccessMsg("");
       try {
-        const res = await fetch(`http://localhost:3001/api/questions/${id}`, {
+        const res = await fetch(`https://csit-backend-production.up.railway.app/api/questions/${id}`, {
           credentials: "include",
         });
 
@@ -86,7 +86,7 @@ export default function EditQuestion() {
     setSuccessMsg("");
 
     try {
-      const res = await fetch(`http://localhost:3001/api/questions/${id}`, {
+      const res = await fetch(`https://csit-backend-production.up.railway.app/api/questions/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -116,7 +116,7 @@ export default function EditQuestion() {
     setSuccessMsg("");
 
     try {
-      const res = await fetch(`http://localhost:3001/api/questions/${id}`, {
+      const res = await fetch(`https://csit-backend-production.up.railway.app/api/questions/${id}`, {
         method: "DELETE",
         credentials: "include",
       });

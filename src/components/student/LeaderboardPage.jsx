@@ -5,7 +5,7 @@ const LeaderboardPage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const BASE_URL = "http://localhost:3001"; // Ensure this matches your backend URL
+  const BASE_URL = "https://csit-backend-production.up.railway.app"; // Ensure this matches your backend URL
 
   useEffect(() => {
     const fetchLeaderboard = async () => {

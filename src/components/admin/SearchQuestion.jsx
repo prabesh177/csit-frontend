@@ -27,7 +27,7 @@ export default function SearchQuestion() {
     }
 
     try {
-      let url = `http://localhost:3001/api/questions/search?`;
+      let url = `https://csit-backend-production.up.railway.app/api/questions/search?`;
       if (searchSubject) {
         url += `subject=${encodeURIComponent(searchSubject)}`;
       }

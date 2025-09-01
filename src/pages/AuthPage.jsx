@@ -51,7 +51,7 @@ export default function AuthPage({ setIsAuthenticated, setUserRole }) {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const navigate = useNavigate();
 
-  const BASE_URL = "http://localhost:3001";
+  const API_URL = "csit-backend-production.up.railway.app";
 
   function validatePassword(pw) {
     const uppercase = /[A-Z]/;
@@ -93,8 +93,8 @@ export default function AuthPage({ setIsAuthenticated, setUserRole }) {
     }
 
     const endpoint = isLogin
-      ? `${BASE_URL}/api/login`
-      : `${BASE_URL}/api/signup`;
+      ? `${API_URL}/api/login`
+      : `${API_URL}/api/signup`;
     const payload = isLogin
       ? { email, password }
       : { firstName, lastName, email, password, userType: "student" };

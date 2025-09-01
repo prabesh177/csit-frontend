@@ -39,7 +39,8 @@ export default function AddQuestion() {
     setIsSuccess(false);
 
     try {
-      const response = await fetch("http://localhost:3001/api/addQuestion", {
+      const response = await fetch("https://csit-backend-production.up.railway.app/api/addQuestion", {
+
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
