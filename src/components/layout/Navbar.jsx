@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import logo from "../../assets/csitlogo.Png";
+import logo from "../../assets/csitlogo.png";
 
 export default function Navbar({ isAuthenticated, setIsAuthenticated }) {
   const [isOpen, setIsOpen] = useState(false);
